@@ -58,3 +58,6 @@ function MyFunction() {
         );
     }
 }
+// The first time the button is displayed, count will be 0 because you passed 0 to useState(). 
+// When you want to change state, call setCount() and pass the new value to it.
+// Clicking this button will increment the counter:
