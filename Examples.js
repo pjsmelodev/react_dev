@@ -11,7 +11,20 @@ export default function MyApp() {
     return (
         <div>
             <h1>Welcome to my app</h1>
-            <MyApp />
+            <MyButton />
         </div>
+    );
+}
+
+// Sintaxe de Markup -> JSX
+// JSX is a syntax extension for JavaScript that looks similar to XML or HTML.
+// JSX is stricter than HTML. You have to close tags like <br />. 
+// Your component also can’t return multiple JSX tags. You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper:
+function AboutPage() {
+    return (
+        <>
+            <h1>About</h1>
+            <p>Hello there.<br />How do oyu do?</p>
+        </>
     );
 }
