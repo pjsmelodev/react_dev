@@ -72,3 +72,22 @@ return (
 {/* <div>
     {isLoggedIn && <AdminPanel />}
 </div> */}
+
+// You will rely on JavaScript features like for loop and the array map() function to render lists of components.
+const products = [
+    { title: 'Cabbage', id: 1 },
+    { title: 'Garlic', id: 2 },
+    { title: 'Apple', id: 3 }
+]
+
+// Inside your component, use the map() function to transform an array of products into an array of <li> items:
+const listItems = products.map(roduct =>
+    // Para efeitos de identificação, cada item da lista deve ter uma chave única (key).
+    <li key={product.id}>
+        {product.title} 
+    </li>
+);
+
+return (
+    <ul>{listItems}</ul>
+);
