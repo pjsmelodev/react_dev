@@ -15,7 +15,7 @@ export default function Profile() {
                 style={{
                     width: user.imageSize,
                     height: user.imageSize
-                }}
+                    }}
             />
         </>
     );
