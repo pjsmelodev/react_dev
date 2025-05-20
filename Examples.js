@@ -45,3 +45,16 @@ return (
         src={user.imageUrl}
     />
 );
+
+// É possível usar condicionais dentro do JSX
+let content;
+if (isLoggedIn) {
+    content = <AdminPanel />;
+} else {
+    content = <LoginForm />;
+}
+return (
+    <div>
+        {content}
+    </div>
+);
