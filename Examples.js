@@ -1,0 +1,1 @@
+// React apps are made out of components.
