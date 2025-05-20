@@ -25,6 +25,23 @@ function AboutPage() {
         <>
             <h1>About</h1>
             <p>Hello there.<br />How do oyu do?</p>
+            {/* É possível adicionar estilos usando uma referência a um arquivo CSS ou usando o atributo style. */}
+            <img className="avatar" />
         </>
     );
 }
+
+// JSX lets you put markup into JavaScript.
+return (
+    <h1>
+        {user.name}
+    </h1>
+);
+
+// One can also “escape into JavaScript” from JSX attributes
+return (
+    <img
+        className="avatar"
+        src={user.imageUrl}
+    />
+);
