@@ -36,3 +36,25 @@ function MyButton() {
     // Do not call the event handler function: you only need to pass it down.
     // React will call your event handler when the user clicks the button.
 }
+
+// Often, you’ll want your component to “remember” some information and display it
+import { useState } from 'react';
+
+function MyFunction() {
+    const [count, setCount] = useState(0);
+    // You’ll get two things from useState: the current state (count), and the function that lets you update it (setCount).
+    // You can give them any names, but the convention is to write [something, setSomething].
+    function MyButton() {
+        const [count, setCount] = useState(0);
+
+        function handleClick() {
+            setCount(count + 1);
+        }
+
+        return (
+            <button onClick={handleClick}>
+                Clicked {count} times
+            </button>
+        );
+    }
+}
